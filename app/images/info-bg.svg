@@ -1,0 +1,18 @@
+<svg id="Группа_1" data-name="Группа 1" xmlns="http://www.w3.org/2000/svg" width="1770" height="169.999" viewBox="0 0 1770 169.999">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fcd7b6;
+        opacity: 0.2;
+      }
+
+      .cls-2 {
+        fill: #243f4d;
+        opacity: 0.1;
+      }
+    </style>
+  </defs>
+  <rect class="cls-1" width="1770" height="169.999"/>
+  <rect class="cls-2" x="567" width="1" height="169.999"/>
+  <rect class="cls-2" x="1171" width="1" height="169.999"/>
+</svg>

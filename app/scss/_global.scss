@@ -15,10 +15,18 @@ main {
     flex-grow: 1;
 }
 .container {
-    max-width: 1190px;
+    max-width: 1200px;
     margin: 0 auto;
-    padding: 0 10px;
+    padding: 0 15px;
 }
+.wide {
+    max-width: 1800px;
+}
+
 a {
     color: #7b7b7b;
+}
+.title{
+    color: #1a1a1a;
+    font-size: 36px;
 }
