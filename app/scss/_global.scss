@@ -26,7 +26,42 @@ main {
 a {
     color: #7b7b7b;
 }
-.title{
+.title {
     color: #1a1a1a;
     font-size: 36px;
+}
+.top__title {
+    @extend %Rubik-300;
+    color: #222933;
+    line-height: 24px;
+    margin-bottom: 15px;
+}
+.breadcrumbs {
+    &__list {
+        display: flex;
+        justify-content: center;
+    }
+    &__item {
+        margin-right: 20px;
+        @extend %Rubik-400;
+        color: #83898f;
+        position: relative;
+        &::after {
+            content: "/";
+            position: absolute;
+            right: -14px;
+            top: 0;
+        }
+        &:last-child {
+            margin-right: 0;
+            &::after {
+                display: none;
+            }
+        }
+    }
+    &__link {
+        font-size: 14px;
+        line-height: 24px;
+        color: inherit;
+    }
 }
