@@ -65,6 +65,37 @@ a {
         color: inherit;
     }
 }
-.btn{
-    
+.pagination {
+    padding-bottom: 60px;
+    @extend %Rubik-400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__list {
+        display: flex;
+        align-items: center;
+    }
+    &__item {
+        margin-right: 15px;
+    }
+    &__link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: solid 1px $accend;
+        // display: inline-block;
+        background-color: #fff;
+        //  padding: 19px 20px;
+        width: 50px;
+        height: 50px;
+        color: #243f4d;
+    }
+    &__link--active {
+        background-color: $accend;
+        color: #fff;
+    }
+    &__next {
+        width: 74px;
+    }
 }
+ 

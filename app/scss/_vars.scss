@@ -39,4 +39,11 @@ $accend: #a3bbc8;
     padding: 15px 60px 15px 18px;
 
 }
+%checkbox-hidden {
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    position: absolute;
+}
 
