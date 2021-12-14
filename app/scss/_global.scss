@@ -24,7 +24,8 @@ main {
 }
 
 a {
-    color: #7b7b7b;
+    // color: #7b7b7b;
+    // color: #243f4d;
 }
 .title {
     color: #1a1a1a;
@@ -96,6 +97,10 @@ a {
     }
     &__next {
         width: 74px;
+    }
+    &__left{
+        justify-content: start;
+        margin-left: -63px;
     }
 }
  
