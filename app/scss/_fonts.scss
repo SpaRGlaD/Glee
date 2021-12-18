@@ -70,3 +70,12 @@
          url('../fonts/Myriadpro-Regular.woff') format('woff');
          font-display: swap;
 }
+@font-face {
+    font-family: 'Nunito-Bold';
+    font-weight: 700;
+    font-style: normal;
+    src: local('Nunito-Bold'),
+         url('../fonts/Nunito-Bold.woff2') format('woff2'),
+         url('../fonts/Nunito-Bold.woff') format('woff');
+         font-display: swap;
+}

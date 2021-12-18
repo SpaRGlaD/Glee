@@ -1269,11 +1269,138 @@ footer {
         border: solid 2px $accend;
     }
 }
-
-.product__item-swiper {
-    // width: 270px;
-    // height: 380px;
+.blog-page {
+    @extend %Rubik-400; 
+    &__inner {
+        display: flex;
+    }
+    
+    &__content {
+        width: 830px;
+    padding-bottom: 20px;   
+    }
+    
+    &__item-link {
+        display: block;
+    }
+    &__item-imgbox{
+        position: relative;
+        margin-bottom: 35px;
+    }
+    &__item-img {
+        width: 830px;
+        height: 500px;
+        object-fit: cover;
+    }
+    .blog-item__info{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        display: inline-block;
+        padding: 0;
+        border: none;
+        width: 275px;
+        height: 71px;
+        background-color: $accend;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        a{
+            color: #fff;
+        }
+        .blog-item__date-day{
+            margin-left: 5px;
+        }
+    }
+    .product-popup__item-link{
+        display: inline-block;
+        border: 1px solid $accend;
+        color: $accend;
+        border-radius: 0;
+        @extend %nunito-700;
+        margin-bottom: 60px;
+        &::after {
+            content: "";
+            top: 28px;
+            background-image: url(../images/icons/arrow-next.svg);
+        }
+    }
+    
+    &__item-title {
+        a{
+            color: #333;
+        }
+        margin-bottom: 30px;
+    }
+    
+    &__item-text {
+        line-height: 30px;
+        margin-bottom: 30px;
+    }
+    
+    &__aside {
+        margin-left: 65px;
+        width: 270px;
+    }
+    &__form-input{
+        height: 43px;
+        padding: 0 15px;
+        border-radius: 5px 0 0 5px;
+        // border-right: none;
+        border: solid 1px #edf1f4;
+        margin-bottom: 55px;
+    }
+    &__form-btn{
+        width: 48px;
+        height: 43px;
+        padding: 12px 15px 13px;
+        border-radius: 5px;
+        border: none;
+        background-color: #edf1f4;
+        margin-left: -5px;
+        padding-top: 7px;
+    }
+    .pagination__left{
+        margin: 0;
+    }
 }
+.recent-posts {
+    &__title {
+        margin-bottom: 35px;
+    }
+    
+    &__item {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    &__item-link {
+        display: block;
+        min-width: 70px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+
+    &__img {
+        width: 70px;
+        height: 70px;
+        object-fit: cover;
+    }
+
+    &__box-title {
+        font-size: 14px;
+        line-height: 20px;
+        color: #333;
+        margin-bottom: 10px;
+    }
+
+    &__day {
+        font-size: 12px;
+        color: #9a9a9a;
+        padding-left: 3px;
+    }
+}
+
 
 
 
