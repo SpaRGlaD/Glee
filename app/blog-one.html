@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glee</title>
+    <link href="css/style.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container wide">
+            <div class="header__inner">
+                <a class="logo" href="#">
+                    <img class="logo__img" src="images/logo.png" alt="logo">
+                </a>
+                <nav class="menu">
+                    <ul class="menu__list">
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" href="#">Home +</a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" href="#">About</a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" href="#">Services</a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" href="#">Pages +</a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" href="#">News</a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="user-nav">
+                    <a class="user-nav__link-search" href="#">
+                        <img class="user-nav__link-img" src="images/icons/search.svg" alt="user navigation">
+                    </a>
+                    <a class="user-nav__link-favorites" href="#">
+                        <img class="user-nav__link-img" src="images/icons/heart.svg" alt="user navigation">
+                        <span class="user-nav__num">0</span>
+                    </a>
+                    <a class="user-nav__link-cart" href="#">
+                        <img class="user-nav__link-img" src="images/icons/cart.svg" alt="user navigation">
+                        <span class="user-nav__num">0</span>
+                    </a>
+                    <a class="user-nav__link-menu" href="#">
+                        <img class="user-nav__link-img" src="images/icons/menu.svg" alt="user navigation">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="top">
+            <div class="top__container">
+                <div class="container">
+                    <div class="top__inner">
+                        <h2 class="top__title title">Blog Details</h2>
+                        <div class="breadcrumbs">
+                            <ul class="breadcrumbs__list">
+                                <li class="breadcrumbs__item">
+                                    <a class="breadcrumbs__link" href="#">Home</a>
+                                </li>
+                                <li class="breadcrumbs__item">
+                                    <a class="breadcrumbs__link" href="#">Blog details</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="blog-page blog-one">
+            <div class="container">
+                <div class="blog-page__inner">
+                    <div class="blog-page__content">
+                        <div class="blog-page__item">
+                            <div class="blog-page__item-imgbox">
+                                <a class="blog-page__item-link" href="#">
+                                    <img class="blog-page__item-img" src="images/blog/page-1.jpg" alt="blog image">
+                                </a>
+                                <div class="blog-item__info">
+                                    <a class="blog-item__date" href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="13px" height="14px"
+                                            viewBox="0 0 13 14" version="1.1">
+                                            <g>
+                                                <path style=" stroke:none;fill-rule:nonzero;fill:#fff;fill-opacity:1;"
+                                                    d="M 4.292969 7.875 L 3.132812 7.875 C 2.941406 7.875 2.785156 7.726562 2.785156 7.546875 L 2.785156 6.453125 C 2.785156 6.273438 2.941406 6.125 3.132812 6.125 L 4.292969 6.125 C 4.484375 6.125 4.644531 6.273438 4.644531 6.453125 L 4.644531 7.546875 C 4.644531 7.726562 4.484375 7.875 4.292969 7.875 Z M 7.429688 7.546875 L 7.429688 6.453125 C 7.429688 6.273438 7.273438 6.125 7.082031 6.125 L 5.917969 6.125 C 5.726562 6.125 5.570312 6.273438 5.570312 6.453125 L 5.570312 7.546875 C 5.570312 7.726562 5.726562 7.875 5.917969 7.875 L 7.082031 7.875 C 7.273438 7.875 7.429688 7.726562 7.429688 7.546875 Z M 10.214844 7.546875 L 10.214844 6.453125 C 10.214844 6.273438 10.058594 6.125 9.867188 6.125 L 8.707031 6.125 C 8.515625 6.125 8.355469 6.273438 8.355469 6.453125 L 8.355469 7.546875 C 8.355469 7.726562 8.515625 7.875 8.707031 7.875 L 9.867188 7.875 C 10.058594 7.875 10.214844 7.726562 10.214844 7.546875 Z M 7.429688 10.171875 L 7.429688 9.078125 C 7.429688 8.898438 7.273438 8.75 7.082031 8.75 L 5.917969 8.75 C 5.726562 8.75 5.570312 8.898438 5.570312 9.078125 L 5.570312 10.171875 C 5.570312 10.351562 5.726562 10.5 5.917969 10.5 L 7.082031 10.5 C 7.273438 10.5 7.429688 10.351562 7.429688 10.171875 Z M 4.644531 10.171875 L 4.644531 9.078125 C 4.644531 8.898438 4.484375 8.75 4.292969 8.75 L 3.132812 8.75 C 2.941406 8.75 2.785156 8.898438 2.785156 9.078125 L 2.785156 10.171875 C 2.785156 10.351562 2.941406 10.5 3.132812 10.5 L 4.292969 10.5 C 4.484375 10.5 4.644531 10.351562 4.644531 10.171875 Z M 10.214844 10.171875 L 10.214844 9.078125 C 10.214844 8.898438 10.058594 8.75 9.867188 8.75 L 8.707031 8.75 C 8.515625 8.75 8.355469 8.898438 8.355469 9.078125 L 8.355469 10.171875 C 8.355469 10.351562 8.515625 10.5 8.707031 10.5 L 9.867188 10.5 C 10.058594 10.5 10.214844 10.351562 10.214844 10.171875 Z M 13 3.0625 L 13 12.6875 C 13 13.414062 12.375 14 11.605469 14 L 1.394531 14 C 0.625 14 0 13.414062 0 12.6875 L 0 3.0625 C 0 2.335938 0.625 1.75 1.394531 1.75 L 2.785156 1.75 L 2.785156 0.328125 C 2.785156 0.148438 2.941406 0 3.132812 0 L 4.292969 0 C 4.484375 0 4.644531 0.148438 4.644531 0.328125 L 4.644531 1.75 L 8.355469 1.75 L 8.355469 0.328125 C 8.355469 0.148438 8.515625 0 8.707031 0 L 9.867188 0 C 10.058594 0 10.214844 0.148438 10.214844 0.328125 L 10.214844 1.75 L 11.605469 1.75 C 12.375 1.75 13 2.335938 13 3.0625 Z M 11.605469 12.523438 L 11.605469 4.375 L 1.394531 4.375 L 1.394531 12.523438 C 1.394531 12.613281 1.472656 12.6875 1.566406 12.6875 L 11.433594 12.6875 C 11.527344 12.6875 11.605469 12.613281 11.605469 12.523438 Z M 11.605469 12.523438 " />
+                                            </g>
+                                        </svg>
+                                        <span class="blog-item__date-day">28 JANUARY, 2020</span>
+                                    </a>
+                                    <a class="blog-item__author" href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12px" height="14px"
+                                            viewBox="0 0 12 14" version="1.1">
+                                            <g>
+                                                <path style=" stroke:none;fill-rule:nonzero;fill:#fff;fill-opacity:1;"
+                                                    d="M 8.398438 8.3125 C 7.632812 8.3125 7.261719 8.75 6 8.75 C 4.738281 8.75 4.371094 8.3125 3.601562 8.3125 C 1.613281 8.3125 0 9.957031 0 11.988281 L 0 12.6875 C 0 13.414062 0.574219 14 1.285156 14 L 10.714844 14 C 11.425781 14 12 13.414062 12 12.6875 L 12 11.988281 C 12 9.957031 10.386719 8.3125 8.398438 8.3125 Z M 10.714844 12.6875 L 1.285156 12.6875 L 1.285156 11.988281 C 1.285156 10.6875 2.324219 9.625 3.601562 9.625 C 3.992188 9.625 4.625 10.0625 6 10.0625 C 7.386719 10.0625 8.007812 9.625 8.398438 9.625 C 9.675781 9.625 10.714844 10.6875 10.714844 11.988281 Z M 6 7.875 C 8.128906 7.875 9.855469 6.109375 9.855469 3.9375 C 9.855469 1.765625 8.128906 0 6 0 C 3.871094 0 2.144531 1.765625 2.144531 3.9375 C 2.144531 6.109375 3.871094 7.875 6 7.875 Z M 6 1.3125 C 7.417969 1.3125 8.570312 2.492188 8.570312 3.9375 C 8.570312 5.382812 7.417969 6.5625 6 6.5625 C 4.582031 6.5625 3.429688 5.382812 3.429688 3.9375 C 3.429688 2.492188 4.582031 1.3125 6 1.3125 Z M 6 1.3125 " />
+                                            </g>
+                                        </svg>
+                                        <span class="blog-item__date-day">BY ADMIN</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="blog-one__item-info">
+                                <h3>
+                                    Fonsectetur adipisicing eiusmod
+                                </h3>
+                                <h5>
+                                    Sdipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                    Ut enim ad minim venia Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                </h5>
+                                <p>
+                                    consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                                    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                                    nisi ut alLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                                    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                                    nulla pariatur.
+                                </p>
+                                <blockquote>
+                                    Sdipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                                    <p>Wiusmod tempor </p>
+                                </blockquote>
+                                <div class="blog-one__item-imgbox">
+                                    <img class="blog-one__left-img" src="images/blog/page-4.jpg" alt="blog image">
+                                    <h4>Riusmod tempor incididunt </h4>
+                                    <p>
+                                        consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                                        laboris nisi ut aliquip ex ea commodo
+                                    </p>
+                                    <h4>Kajtsal jervcm eoaspckred</h4>
+                                    <p>
+                                        consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                                        laboris nisi ut aliquip ex ea commodo
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="blog-one__author">
+                                <div class="blog-one__author-content">
+                                    <img class="blog-one__author-img" src="images/blog/author.jpg" alt="author image">
+                                    <div class="blog-one__author-name">
+                                        Mark N. Hernandez
+                                        <p class="blog-one__author-post">Designer</p>
+                                    </div>
+                                </div>
+                                <div class="blog-one__box">
+                                    <div class="blog-one__tags">
+                                        <span>Tags:</span>
+                                        <a class="blog-one__tags-link" href="#">All, </a>
+                                        <a class="blog-one__tags-link" href="#">Trending</a>
+                                    </div>
+                                    <div class="blog-one__social">
+                                        <span>Share:</span>
+                                        <a class="blog-one__social-link" href="#">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="9px" height="16px"
+                                                viewBox="0 0 9 16" version="1.1">
+                                                <g>
+                                                    <path style=" stroke:none;fill-rule:nonzero;fill-opacity:1;"
+                                                        d="M 7.015625 9 L 7.3125 6.105469 L 5.4375 6.105469 L 5.4375 4.226562 C 5.4375 3.433594 5.699219 2.660156 6.539062 2.660156 L 7.390625 2.660156 L 7.390625 0.195312 C 7.390625 0.195312 6.617188 0 5.878906 0 C 4.335938 0 3.324219 1.386719 3.324219 3.898438 L 3.324219 6.105469 L 1.609375 6.105469 L 1.609375 9 L 3.324219 9 L 3.324219 16 L 5.4375 16 L 5.4375 9 Z M 7.015625 9 " />
+                                                </g>
+                                            </svg>
+                                        </a>
+                                        <a class="blog-one__social-link" href="#">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="15px" height="13px"
+                                                viewBox="0 0 15 13" version="1.1">
+                                                <g>
+                                                    <path style=" stroke:none;fill-rule:nonzero;fill-opacity:1;"
+                                                        d="M 13.457031 4.292969 C 13.46875 4.390625 13.46875 4.484375 13.46875 4.582031 C 13.46875 7.519531 10.375 10.898438 4.722656 10.898438 C 2.980469 10.898438 1.359375 10.535156 0 9.902344 C 0.246094 9.921875 0.484375 9.929688 0.742188 9.929688 C 2.179688 9.929688 3.503906 9.582031 4.558594 8.984375 C 3.207031 8.960938 2.074219 8.324219 1.683594 7.441406 C 1.875 7.460938 2.066406 7.476562 2.265625 7.476562 C 2.542969 7.476562 2.816406 7.449219 3.074219 7.398438 C 1.664062 7.195312 0.609375 6.300781 0.609375 5.222656 L 0.609375 5.195312 C 1.019531 5.359375 1.496094 5.460938 2 5.476562 C 1.171875 5.078125 0.628906 4.394531 0.628906 3.628906 C 0.628906 3.214844 0.78125 2.835938 1.046875 2.503906 C 2.558594 3.855469 4.835938 4.734375 7.386719 4.828125 C 7.339844 4.664062 7.308594 4.492188 7.308594 4.320312 C 7.308594 3.097656 8.679688 2.101562 10.382812 2.101562 C 11.269531 2.101562 12.070312 2.371094 12.628906 2.800781 C 13.324219 2.707031 13.992188 2.519531 14.582031 2.265625 C 14.351562 2.78125 13.867188 3.214844 13.230469 3.488281 C 13.847656 3.441406 14.449219 3.316406 15 3.144531 C 14.582031 3.585938 14.058594 3.976562 13.457031 4.292969 Z M 13.457031 4.292969 " />
+                                                </g>
+                                            </svg>
+
+                                        </a>
+                                        <a class="blog-one__social-link" href="#">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="15px" height="14px"
+                                                viewBox="0 0 15 14" version="1.1">
+                                                <g id="surface1">
+                                                    <path style=" stroke:none;fill-rule:evenodd;fill-opacity:1;"
+                                                        d="M 3.167969 13.949219 C 1.546875 13.640625 0.328125 12.394531 0.140625 10.863281 C -0.0625 9.667969 -0.078125 4.117188 0.292969 2.914062 C 0.664062 1.4375 1.984375 0.335938 3.601562 0.15625 C 4.863281 0.03125 6.132812 -0.0234375 7.402344 0 C 8.816406 0 10.242188 0.03125 11.101562 0.0820312 C 12.132812 0.101562 13.117188 0.476562 13.871094 1.136719 C 14.585938 1.773438 15.019531 2.636719 15.089844 3.558594 C 15.195312 4.667969 15.273438 9.933594 14.921875 11.167969 C 14.566406 12.683594 13.21875 13.820312 11.566406 14 C 10.179688 14.125 8.78125 14.175781 7.386719 14.15625 C 5.976562 14.195312 4.566406 14.128906 3.167969 13.949219 Z M 3.980469 1.382812 C 2.726562 1.457031 1.707031 2.351562 1.554688 3.515625 C 1.34375 5.898438 1.324219 8.289062 1.5 10.671875 C 1.609375 11.640625 2.355469 12.441406 3.371094 12.675781 C 4.722656 12.851562 6.089844 12.917969 7.457031 12.878906 C 9.042969 12.878906 10.605469 12.832031 11.195312 12.773438 C 12.457031 12.703125 13.480469 11.800781 13.625 10.632812 C 13.828125 8.316406 13.859375 5.992188 13.71875 3.671875 C 13.660156 2.5 12.695312 1.542969 11.445312 1.417969 C 10.183594 1.308594 8.917969 1.265625 7.648438 1.285156 C 6.140625 1.285156 4.640625 1.316406 3.980469 1.382812 Z M 3.695312 7.082031 C 3.714844 5.070312 5.46875 3.449219 7.625 3.449219 C 8.652344 3.449219 9.636719 3.835938 10.363281 4.515625 C 11.085938 5.199219 11.488281 6.121094 11.480469 7.082031 C 11.457031 9.09375 9.707031 10.710938 7.554688 10.714844 C 6.523438 10.714844 5.539062 10.332031 4.8125 9.648438 C 4.089844 8.964844 3.6875 8.042969 3.695312 7.082031 Z M 5.066406 7.058594 C 5.054688 7.679688 5.308594 8.28125 5.773438 8.726562 C 6.242188 9.171875 6.878906 9.425781 7.542969 9.429688 L 7.5625 9.429688 C 8.945312 9.429688 10.074219 8.398438 10.101562 7.105469 C 10.117188 6.484375 9.863281 5.882812 9.398438 5.4375 C 8.933594 4.992188 8.296875 4.738281 7.632812 4.734375 L 7.605469 4.734375 C 6.222656 4.734375 5.09375 5.765625 5.066406 7.058594 Z M 10.757812 3.3125 C 10.753906 3.085938 10.851562 2.871094 11.023438 2.710938 C 11.191406 2.550781 11.421875 2.460938 11.664062 2.460938 L 11.671875 2.460938 C 11.914062 2.460938 12.148438 2.550781 12.316406 2.714844 C 12.488281 2.875 12.578125 3.09375 12.574219 3.320312 C 12.566406 3.785156 12.15625 4.160156 11.65625 4.160156 C 11.414062 4.160156 11.183594 4.070312 11.015625 3.910156 C 10.84375 3.75 10.753906 3.535156 10.757812 3.3125 Z M 10.757812 3.3125 " />
+                                                </g>
+                                            </svg>
+
+                                        </a>
+                                        <a class="blog-one__social-link" href="#">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="19px" height="12px"
+                                                viewBox="0 0 19 12" version="1.1">
+                                                <g id="surface1">
+                                                    <path style=" stroke:none;fill-rule:evenodd;fill-opacity:1;"
+                                                        d="M 5.550781 12.300781 C 2.886719 12.152344 0.65625 10.164062 0.105469 7.457031 C -0.0078125 6.914062 -0.046875 6.355469 -0.0078125 5.804688 C 0.171875 3.105469 2 0.835938 4.527344 0.179688 C 4.84375 0.0859375 5.171875 0.03125 5.5 0.015625 C 5.691406 0.0078125 5.882812 0 6.070312 0 C 7.058594 0.00390625 8.027344 0.28125 8.878906 0.796875 C 9.25 1.03125 9.601562 1.296875 9.929688 1.59375 C 9.335938 2.203125 8.765625 2.792969 8.1875 3.386719 C 7.707031 2.917969 7.101562 2.613281 6.453125 2.511719 C 6.285156 2.488281 6.117188 2.476562 5.949219 2.476562 C 4.304688 2.5 2.890625 3.6875 2.527344 5.347656 C 2.4375 5.710938 2.410156 6.089844 2.445312 6.460938 C 2.558594 7.941406 3.515625 9.203125 4.875 9.667969 C 5.207031 9.773438 5.554688 9.828125 5.90625 9.832031 C 5.988281 9.832031 6.070312 9.824219 6.15625 9.824219 C 6.769531 9.792969 7.363281 9.59375 7.882812 9.25 C 8.503906 8.820312 8.929688 8.148438 9.0625 7.386719 L 5.882812 7.386719 C 5.882812 7.3125 5.898438 5.769531 5.898438 5.023438 L 5.90625 4.921875 L 11.492188 4.921875 C 11.84375 6.726562 11.460938 8.601562 10.433594 10.105469 C 9.707031 11.101562 8.671875 11.804688 7.5 12.09375 C 6.976562 12.238281 6.4375 12.308594 5.898438 12.308594 C 5.78125 12.308594 5.667969 12.308594 5.550781 12.300781 Z M 16.5625 8.828125 L 15 8.828125 L 15 8.769531 L 15.019531 6.6875 L 12.945312 6.6875 L 12.945312 6.617188 L 12.960938 5.058594 L 12.960938 4.996094 L 15.027344 4.996094 L 15.042969 2.914062 L 15.042969 2.855469 L 16.664062 2.855469 L 16.664062 2.914062 L 16.644531 4.996094 L 18.71875 4.996094 L 18.71875 5.058594 L 18.710938 6.617188 L 18.710938 6.6875 L 16.636719 6.6875 L 16.621094 8.769531 L 16.621094 8.828125 Z M 16.5625 8.828125 " />
+                                                </g>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="comments">
+                                <div class="comments__title">3 Comments</div>
+                                <div class="comments__item">
+                                    <img class="comments__img" src="images/blog/avatar-1.jpg" alt="user image">
+                                    <div class="comments__item-info">
+                                        <div class="comments__item-top">
+                                            <p class="comments__item-name">Delores G. Roberts</p>
+                                            <p class="comments__item-date">Add 11 Oct 2020</p>
+                                        </div>
+                                        <p class="comments__item-text">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas fringilla
+                                            massa et tristique convallis. Class aptent taciti sociosqu ad litora
+                                            torquent per conubia nostra, per inceptos himenaeos. Suspendisse orci sem,
+                                            ultrices
+                                        </p>
+                                        <a class="comments__item-link" href="#">Reply</a>
+                                    </div>
+                                </div>
+                                <div class="comments__item comments__item--active">
+                                    <img class="comments__img" src="images/blog/avatar-2.jpg" alt="user image">
+                                    <div class="comments__item-info">
+                                        <div class="comments__item-top">
+                                            <p class="comments__item-name">Shannon S. Williams</p>
+                                            <p class="comments__item-date">Add 11 Oct 2020</p>
+                                        </div>
+                                        <p class="comments__item-text">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas fringilla
+                                            massa et tristique convallis. Class aptent taciti sociosqu ad litora
+                                            torquent per conubia nostra
+                                        </p>
+                                        <a class="comments__item-link" href="#">Reply</a>
+                                    </div>
+                                </div>
+                                <div class="comments__item">
+                                    <img class="comments__img" src="images/blog/avatar-3.jpg" alt="user image">
+                                    <div class="comments__item-info">
+                                        <div class="comments__item-top">
+                                            <p class="comments__item-name">Nicholas R. Coley</p>
+                                            <p class="comments__item-date">Add 11 Oct 2020</p>
+                                        </div>
+                                        <p class="comments__item-text">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas fringilla
+                                            massa et tristique convallis. Class aptent taciti sociosqu ad litora
+                                            torquent per conubia nostra, per inceptos himenaeos. Suspendisse orci sem,
+                                        </p>
+                                        <a class="comments__item-link" href="#">Reply</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <form class="comments-form">
+                                <p class="comments__title">Leave A Comment</p>
+                                <div class="comments-form__box-input">
+                                    <input class="comments-form__input comments-form__input-name" placeholder="Name"
+                                        type="text">
+                                    <input class="comments-form__input comments-form__input-email"
+                                        placeholder="youremail@gmail.com" type="text">
+                                </div>
+                                <textarea class="comments-form__area" placeholder="Comment"></textarea>
+                                <button class="comments-form__btn" type="submit">Post Comment</button>
+                            </form>
+
+                        </div>
+                    </div>
+
+                    <div class="blog-page__aside">
+                        <div class="blog-page__aside-search">
+                            <form class="blog-page__form-search" action="#">
+                                <input class="blog-page__form-input" type="text">
+                                <button class="blog-page__form-btn" type="submit">
+                                    <img src="images/icons/search-blog.svg" alt="seach image">
+                                </button>
+                            </form>
+                        </div>
+                        <div class="filter__item filter-category">
+                            <h3 class="filter__title filter__title-category">CATEGORY</h3>
+                            <form class="filter-category__form" action="#">
+                                <label class="filter-category__label">
+                                    <input class="filter-category__input" type="checkbox">
+                                    <div class="filter-category__checkbox">
+                                        <span>Chair</span>
+                                    </div>
+                                </label>
+                                <label class="filter-category__label">
+                                    <input class="filter-category__input" type="checkbox">
+                                    <div class="filter-category__checkbox">
+                                        <span>Table</span>
+                                    </div>
+                                </label>
+                                <label class="filter-category__label">
+                                    <input class="filter-category__input" type="checkbox">
+                                    <div class="filter-category__checkbox">
+                                        <span>Lamp</span>
+                                    </div>
+                                </label>
+                                <label class="filter-category__label">
+                                    <input class="filter-category__input" type="checkbox">
+                                    <div class="filter-category__checkbox">
+                                        <span>Watch</span>
+                                    </div>
+                                </label>
+                                <label class="filter-category__label">
+                                    <input class="filter-category__input" type="checkbox">
+                                    <div class="filter-category__checkbox">
+                                        <span>Clock</span>
+                                    </div>
+                                </label>
+                            </form>
+                        </div>
+                        <div class="recent-posts">
+                            <h3 class="recent-posts__title filter__title">Recent Posts</h3>
+                            <div class="recent-posts__item">
+                                <a class="recent-posts__item-link" href="#">
+                                    <img class="recent-posts__img" src="images/blog/post-1.jpg" alt="post image">
+                                </a>
+                                <div class="recent-posts__box">
+                                    <h5 class="recent-posts__box-title">
+                                        <a class="recent-posts__link" href="#">Corem ipsum dolor tetur adipisicing
+                                            elit</a>
+                                    </h5>
+                                    <div class="recent-posts__box-date">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="13px" height="14px"
+                                            viewBox="0 0 13 14" version="1.1">
+                                            <g>
+                                                <path
+                                                    style=" stroke:none;fill-rule:nonzero;fill:#9a9a9a;fill-opacity:1;"
+                                                    d="M 4.292969 7.875 L 3.132812 7.875 C 2.941406 7.875 2.785156 7.726562 2.785156 7.546875 L 2.785156 6.453125 C 2.785156 6.273438 2.941406 6.125 3.132812 6.125 L 4.292969 6.125 C 4.484375 6.125 4.644531 6.273438 4.644531 6.453125 L 4.644531 7.546875 C 4.644531 7.726562 4.484375 7.875 4.292969 7.875 Z M 7.429688 7.546875 L 7.429688 6.453125 C 7.429688 6.273438 7.273438 6.125 7.082031 6.125 L 5.917969 6.125 C 5.726562 6.125 5.570312 6.273438 5.570312 6.453125 L 5.570312 7.546875 C 5.570312 7.726562 5.726562 7.875 5.917969 7.875 L 7.082031 7.875 C 7.273438 7.875 7.429688 7.726562 7.429688 7.546875 Z M 10.214844 7.546875 L 10.214844 6.453125 C 10.214844 6.273438 10.058594 6.125 9.867188 6.125 L 8.707031 6.125 C 8.515625 6.125 8.355469 6.273438 8.355469 6.453125 L 8.355469 7.546875 C 8.355469 7.726562 8.515625 7.875 8.707031 7.875 L 9.867188 7.875 C 10.058594 7.875 10.214844 7.726562 10.214844 7.546875 Z M 7.429688 10.171875 L 7.429688 9.078125 C 7.429688 8.898438 7.273438 8.75 7.082031 8.75 L 5.917969 8.75 C 5.726562 8.75 5.570312 8.898438 5.570312 9.078125 L 5.570312 10.171875 C 5.570312 10.351562 5.726562 10.5 5.917969 10.5 L 7.082031 10.5 C 7.273438 10.5 7.429688 10.351562 7.429688 10.171875 Z M 4.644531 10.171875 L 4.644531 9.078125 C 4.644531 8.898438 4.484375 8.75 4.292969 8.75 L 3.132812 8.75 C 2.941406 8.75 2.785156 8.898438 2.785156 9.078125 L 2.785156 10.171875 C 2.785156 10.351562 2.941406 10.5 3.132812 10.5 L 4.292969 10.5 C 4.484375 10.5 4.644531 10.351562 4.644531 10.171875 Z M 10.214844 10.171875 L 10.214844 9.078125 C 10.214844 8.898438 10.058594 8.75 9.867188 8.75 L 8.707031 8.75 C 8.515625 8.75 8.355469 8.898438 8.355469 9.078125 L 8.355469 10.171875 C 8.355469 10.351562 8.515625 10.5 8.707031 10.5 L 9.867188 10.5 C 10.058594 10.5 10.214844 10.351562 10.214844 10.171875 Z M 13 3.0625 L 13 12.6875 C 13 13.414062 12.375 14 11.605469 14 L 1.394531 14 C 0.625 14 0 13.414062 0 12.6875 L 0 3.0625 C 0 2.335938 0.625 1.75 1.394531 1.75 L 2.785156 1.75 L 2.785156 0.328125 C 2.785156 0.148438 2.941406 0 3.132812 0 L 4.292969 0 C 4.484375 0 4.644531 0.148438 4.644531 0.328125 L 4.644531 1.75 L 8.355469 1.75 L 8.355469 0.328125 C 8.355469 0.148438 8.515625 0 8.707031 0 L 9.867188 0 C 10.058594 0 10.214844 0.148438 10.214844 0.328125 L 10.214844 1.75 L 11.605469 1.75 C 12.375 1.75 13 2.335938 13 3.0625 Z M 11.605469 12.523438 L 11.605469 4.375 L 1.394531 4.375 L 1.394531 12.523438 C 1.394531 12.613281 1.472656 12.6875 1.566406 12.6875 L 11.433594 12.6875 C 11.527344 12.6875 11.605469 12.613281 11.605469 12.523438 Z M 11.605469 12.523438 " />
+                                            </g>
+                                        </svg>
+                                        <span class="recent-posts__day">28 JANUARY, 2020</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="recent-posts__item">
+                                <a class="recent-posts__item-link" href="#">
+                                    <img class="recent-posts__img" src="images/blog/post-2.jpg" alt="post image">
+                                </a>
+                                <div class="recent-posts__box">
+                                    <h5 class="recent-posts__box-title">
+                                        <a class="recent-posts__link" href="#">Fdipisicing elit, sed do eiusmod
+                                            tempor</a>
+                                    </h5>
+                                    <div class="recent-posts__box-date">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="13px" height="14px"
+                                            viewBox="0 0 13 14" version="1.1">
+                                            <g>
+                                                <path
+                                                    style=" stroke:none;fill-rule:nonzero;fill:#9a9a9a;fill-opacity:1;"
+                                                    d="M 4.292969 7.875 L 3.132812 7.875 C 2.941406 7.875 2.785156 7.726562 2.785156 7.546875 L 2.785156 6.453125 C 2.785156 6.273438 2.941406 6.125 3.132812 6.125 L 4.292969 6.125 C 4.484375 6.125 4.644531 6.273438 4.644531 6.453125 L 4.644531 7.546875 C 4.644531 7.726562 4.484375 7.875 4.292969 7.875 Z M 7.429688 7.546875 L 7.429688 6.453125 C 7.429688 6.273438 7.273438 6.125 7.082031 6.125 L 5.917969 6.125 C 5.726562 6.125 5.570312 6.273438 5.570312 6.453125 L 5.570312 7.546875 C 5.570312 7.726562 5.726562 7.875 5.917969 7.875 L 7.082031 7.875 C 7.273438 7.875 7.429688 7.726562 7.429688 7.546875 Z M 10.214844 7.546875 L 10.214844 6.453125 C 10.214844 6.273438 10.058594 6.125 9.867188 6.125 L 8.707031 6.125 C 8.515625 6.125 8.355469 6.273438 8.355469 6.453125 L 8.355469 7.546875 C 8.355469 7.726562 8.515625 7.875 8.707031 7.875 L 9.867188 7.875 C 10.058594 7.875 10.214844 7.726562 10.214844 7.546875 Z M 7.429688 10.171875 L 7.429688 9.078125 C 7.429688 8.898438 7.273438 8.75 7.082031 8.75 L 5.917969 8.75 C 5.726562 8.75 5.570312 8.898438 5.570312 9.078125 L 5.570312 10.171875 C 5.570312 10.351562 5.726562 10.5 5.917969 10.5 L 7.082031 10.5 C 7.273438 10.5 7.429688 10.351562 7.429688 10.171875 Z M 4.644531 10.171875 L 4.644531 9.078125 C 4.644531 8.898438 4.484375 8.75 4.292969 8.75 L 3.132812 8.75 C 2.941406 8.75 2.785156 8.898438 2.785156 9.078125 L 2.785156 10.171875 C 2.785156 10.351562 2.941406 10.5 3.132812 10.5 L 4.292969 10.5 C 4.484375 10.5 4.644531 10.351562 4.644531 10.171875 Z M 10.214844 10.171875 L 10.214844 9.078125 C 10.214844 8.898438 10.058594 8.75 9.867188 8.75 L 8.707031 8.75 C 8.515625 8.75 8.355469 8.898438 8.355469 9.078125 L 8.355469 10.171875 C 8.355469 10.351562 8.515625 10.5 8.707031 10.5 L 9.867188 10.5 C 10.058594 10.5 10.214844 10.351562 10.214844 10.171875 Z M 13 3.0625 L 13 12.6875 C 13 13.414062 12.375 14 11.605469 14 L 1.394531 14 C 0.625 14 0 13.414062 0 12.6875 L 0 3.0625 C 0 2.335938 0.625 1.75 1.394531 1.75 L 2.785156 1.75 L 2.785156 0.328125 C 2.785156 0.148438 2.941406 0 3.132812 0 L 4.292969 0 C 4.484375 0 4.644531 0.148438 4.644531 0.328125 L 4.644531 1.75 L 8.355469 1.75 L 8.355469 0.328125 C 8.355469 0.148438 8.515625 0 8.707031 0 L 9.867188 0 C 10.058594 0 10.214844 0.148438 10.214844 0.328125 L 10.214844 1.75 L 11.605469 1.75 C 12.375 1.75 13 2.335938 13 3.0625 Z M 11.605469 12.523438 L 11.605469 4.375 L 1.394531 4.375 L 1.394531 12.523438 C 1.394531 12.613281 1.472656 12.6875 1.566406 12.6875 L 11.433594 12.6875 C 11.527344 12.6875 11.605469 12.613281 11.605469 12.523438 Z M 11.605469 12.523438 " />
+                                            </g>
+                                        </svg>
+                                        <span class="recent-posts__day">28 JANUARY, 2020</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="recent-posts__item">
+                                <a class="recent-posts__item-link" href="#">
+                                    <img class="recent-posts__img" src="images/blog/post-3.jpg" alt="post image">
+                                </a>
+                                <div class="recent-posts__box">
+                                    <h5 class="recent-posts__box-title">
+                                        <a class="recent-posts__link" href="#">Eonsectetur adipisicing elit, sed do
+                                            eiusmod </a>
+                                    </h5>
+                                    <div class="recent-posts__box-date">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="13px" height="14px"
+                                            viewBox="0 0 13 14" version="1.1">
+                                            <g>
+                                                <path
+                                                    style=" stroke:none;fill-rule:nonzero;fill:#9a9a9a;fill-opacity:1;"
+                                                    d="M 4.292969 7.875 L 3.132812 7.875 C 2.941406 7.875 2.785156 7.726562 2.785156 7.546875 L 2.785156 6.453125 C 2.785156 6.273438 2.941406 6.125 3.132812 6.125 L 4.292969 6.125 C 4.484375 6.125 4.644531 6.273438 4.644531 6.453125 L 4.644531 7.546875 C 4.644531 7.726562 4.484375 7.875 4.292969 7.875 Z M 7.429688 7.546875 L 7.429688 6.453125 C 7.429688 6.273438 7.273438 6.125 7.082031 6.125 L 5.917969 6.125 C 5.726562 6.125 5.570312 6.273438 5.570312 6.453125 L 5.570312 7.546875 C 5.570312 7.726562 5.726562 7.875 5.917969 7.875 L 7.082031 7.875 C 7.273438 7.875 7.429688 7.726562 7.429688 7.546875 Z M 10.214844 7.546875 L 10.214844 6.453125 C 10.214844 6.273438 10.058594 6.125 9.867188 6.125 L 8.707031 6.125 C 8.515625 6.125 8.355469 6.273438 8.355469 6.453125 L 8.355469 7.546875 C 8.355469 7.726562 8.515625 7.875 8.707031 7.875 L 9.867188 7.875 C 10.058594 7.875 10.214844 7.726562 10.214844 7.546875 Z M 7.429688 10.171875 L 7.429688 9.078125 C 7.429688 8.898438 7.273438 8.75 7.082031 8.75 L 5.917969 8.75 C 5.726562 8.75 5.570312 8.898438 5.570312 9.078125 L 5.570312 10.171875 C 5.570312 10.351562 5.726562 10.5 5.917969 10.5 L 7.082031 10.5 C 7.273438 10.5 7.429688 10.351562 7.429688 10.171875 Z M 4.644531 10.171875 L 4.644531 9.078125 C 4.644531 8.898438 4.484375 8.75 4.292969 8.75 L 3.132812 8.75 C 2.941406 8.75 2.785156 8.898438 2.785156 9.078125 L 2.785156 10.171875 C 2.785156 10.351562 2.941406 10.5 3.132812 10.5 L 4.292969 10.5 C 4.484375 10.5 4.644531 10.351562 4.644531 10.171875 Z M 10.214844 10.171875 L 10.214844 9.078125 C 10.214844 8.898438 10.058594 8.75 9.867188 8.75 L 8.707031 8.75 C 8.515625 8.75 8.355469 8.898438 8.355469 9.078125 L 8.355469 10.171875 C 8.355469 10.351562 8.515625 10.5 8.707031 10.5 L 9.867188 10.5 C 10.058594 10.5 10.214844 10.351562 10.214844 10.171875 Z M 13 3.0625 L 13 12.6875 C 13 13.414062 12.375 14 11.605469 14 L 1.394531 14 C 0.625 14 0 13.414062 0 12.6875 L 0 3.0625 C 0 2.335938 0.625 1.75 1.394531 1.75 L 2.785156 1.75 L 2.785156 0.328125 C 2.785156 0.148438 2.941406 0 3.132812 0 L 4.292969 0 C 4.484375 0 4.644531 0.148438 4.644531 0.328125 L 4.644531 1.75 L 8.355469 1.75 L 8.355469 0.328125 C 8.355469 0.148438 8.515625 0 8.707031 0 L 9.867188 0 C 10.058594 0 10.214844 0.148438 10.214844 0.328125 L 10.214844 1.75 L 11.605469 1.75 C 12.375 1.75 13 2.335938 13 3.0625 Z M 11.605469 12.523438 L 11.605469 4.375 L 1.394531 4.375 L 1.394531 12.523438 C 1.394531 12.613281 1.472656 12.6875 1.566406 12.6875 L 11.433594 12.6875 C 11.527344 12.6875 11.605469 12.613281 11.605469 12.523438 Z M 11.605469 12.523438 " />
+                                            </g>
+                                        </svg>
+                                        <span class="recent-posts__day">28 JANUARY, 2020</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="recent-posts__item">
+                                <a class="recent-posts__item-link" href="#">
+                                    <img class="recent-posts__img" src="images/blog/post-4.jpg" alt="post image">
+                                </a>
+                                <div class="recent-posts__box">
+                                    <h5 class="recent-posts__box-title">
+                                        <a class="recent-posts__link" href="#">gnim ad minim veniam, quis nostrud </a>
+                                    </h5>
+                                    <div class="recent-posts__box-date">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="13px" height="14px"
+                                            viewBox="0 0 13 14" version="1.1">
+                                            <g>
+                                                <path
+                                                    style=" stroke:none;fill-rule:nonzero;fill:#9a9a9a;fill-opacity:1;"
+                                                    d="M 4.292969 7.875 L 3.132812 7.875 C 2.941406 7.875 2.785156 7.726562 2.785156 7.546875 L 2.785156 6.453125 C 2.785156 6.273438 2.941406 6.125 3.132812 6.125 L 4.292969 6.125 C 4.484375 6.125 4.644531 6.273438 4.644531 6.453125 L 4.644531 7.546875 C 4.644531 7.726562 4.484375 7.875 4.292969 7.875 Z M 7.429688 7.546875 L 7.429688 6.453125 C 7.429688 6.273438 7.273438 6.125 7.082031 6.125 L 5.917969 6.125 C 5.726562 6.125 5.570312 6.273438 5.570312 6.453125 L 5.570312 7.546875 C 5.570312 7.726562 5.726562 7.875 5.917969 7.875 L 7.082031 7.875 C 7.273438 7.875 7.429688 7.726562 7.429688 7.546875 Z M 10.214844 7.546875 L 10.214844 6.453125 C 10.214844 6.273438 10.058594 6.125 9.867188 6.125 L 8.707031 6.125 C 8.515625 6.125 8.355469 6.273438 8.355469 6.453125 L 8.355469 7.546875 C 8.355469 7.726562 8.515625 7.875 8.707031 7.875 L 9.867188 7.875 C 10.058594 7.875 10.214844 7.726562 10.214844 7.546875 Z M 7.429688 10.171875 L 7.429688 9.078125 C 7.429688 8.898438 7.273438 8.75 7.082031 8.75 L 5.917969 8.75 C 5.726562 8.75 5.570312 8.898438 5.570312 9.078125 L 5.570312 10.171875 C 5.570312 10.351562 5.726562 10.5 5.917969 10.5 L 7.082031 10.5 C 7.273438 10.5 7.429688 10.351562 7.429688 10.171875 Z M 4.644531 10.171875 L 4.644531 9.078125 C 4.644531 8.898438 4.484375 8.75 4.292969 8.75 L 3.132812 8.75 C 2.941406 8.75 2.785156 8.898438 2.785156 9.078125 L 2.785156 10.171875 C 2.785156 10.351562 2.941406 10.5 3.132812 10.5 L 4.292969 10.5 C 4.484375 10.5 4.644531 10.351562 4.644531 10.171875 Z M 10.214844 10.171875 L 10.214844 9.078125 C 10.214844 8.898438 10.058594 8.75 9.867188 8.75 L 8.707031 8.75 C 8.515625 8.75 8.355469 8.898438 8.355469 9.078125 L 8.355469 10.171875 C 8.355469 10.351562 8.515625 10.5 8.707031 10.5 L 9.867188 10.5 C 10.058594 10.5 10.214844 10.351562 10.214844 10.171875 Z M 13 3.0625 L 13 12.6875 C 13 13.414062 12.375 14 11.605469 14 L 1.394531 14 C 0.625 14 0 13.414062 0 12.6875 L 0 3.0625 C 0 2.335938 0.625 1.75 1.394531 1.75 L 2.785156 1.75 L 2.785156 0.328125 C 2.785156 0.148438 2.941406 0 3.132812 0 L 4.292969 0 C 4.484375 0 4.644531 0.148438 4.644531 0.328125 L 4.644531 1.75 L 8.355469 1.75 L 8.355469 0.328125 C 8.355469 0.148438 8.515625 0 8.707031 0 L 9.867188 0 C 10.058594 0 10.214844 0.148438 10.214844 0.328125 L 10.214844 1.75 L 11.605469 1.75 C 12.375 1.75 13 2.335938 13 3.0625 Z M 11.605469 12.523438 L 11.605469 4.375 L 1.394531 4.375 L 1.394531 12.523438 C 1.394531 12.613281 1.472656 12.6875 1.566406 12.6875 L 11.433594 12.6875 C 11.527344 12.6875 11.605469 12.613281 11.605469 12.523438 Z M 11.605469 12.523438 " />
+                                            </g>
+                                        </svg>
+                                        <span class="recent-posts__day">28 JANUARY, 2020</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <div class="partners">
+            <div class="container">
+                <ul class="partners__list">
+                    <li class="partners__item">
+                        <img src="images/partners/1.png" alt="partners logo">
+                    </li>
+                    <li class="partners__item">
+                        <img src="images/partners/2.png" alt="partners logo">
+                    </li>
+                    <li class="partners__item">
+                        <img src="images/partners/3.png" alt="partners logo">
+                    </li>
+                    <li class="partners__item">
+                        <img src="images/partners/4.png" alt="partners logo">
+                    </li>
+                    <li class="partners__item">
+                        <img src="images/partners/5.png" alt="partners logo">
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-top__item footer-top__contact">
+                    <a class="logo footer-top__logo" href="#">
+                        <img class="logo__img" src="images/logo.png" alt="logo">
+                    </a>
+                    <a class="footer-top__adress" href="#">
+                        ADDRESS: 4772 Wines Lane
+                        Houston, TX 77032
+                    </a>
+                    <a class="footer-top__phone" href="tel:+832-347-5843">
+                        TELEPHONE: +832-347-5843
+                    </a>
+                    <a class="footer-top__email" href="mailto:contact@Glee.com">
+                        EMAIL: contact@Glee.com
+                    </a>
+                </div>
+                <div class="footer-top__item">
+                    <h6 class="footer-top__title">Services</h6>
+                    <ul class="footer-top__list">
+                        <li class="footer-top__item">
+                            <a class="footer-top__link" href="#">About us</a>
+                        </li>
+                        <li class="footer-top__item">
+                            <a class="footer-top__link" href="#">Return Policy</a>
+                        </li>
+                        <li class="footer-top__item">
+                            <a class="footer-top__link" href="#">Our Blog</a>
+                        </li>
+                        <li class="footer-top__item">
+                            <a class="footer-top__link" href="#">Contact Us</a>
+                        </li>
+                        <li class="footer-top__item">
+                            <a class="footer-top__link" href="#">Terms & Condition</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-top__item">
+                    <h6 class="footer-top__title">Account</h6>
+                    <ul class="footer-top__list">
+                        <li class="footer-top__item">
+                            <a class="footer-top__link" href="#">Your Account</a>
+                        </li>
+                        <li class="footer-top__item">
+                            <a class="footer-top__link" href="#">Checkout</a>
+                        </li>
+                        <li class="footer-top__item">
+                            <a class="footer-top__link" href="#">Login</a>
+                        </li>
+                        <li class="footer-top__item">
+                            <a class="footer-top__link" href="#">Register</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-top__item">
+                    <h6 class="footer-top__title">newsletter</h6>
+                    <p class="footer-top__text">
+                        Subscribe by our newsletter and get update protidin.
+                    </p>
+                    <form class="footer-top__form" action="#">
+                        <input class="footer-top__form-input" type="text" placeholder="Email address" required>
+                        <button class="footer-top__form-btn">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-bottom__copy">
+                    ©2020 CopyRight Example. All rights reserved.
+                </p>
+                <div class="footer-bottom__nav">
+                    <ul class="footer-bottom__nav-items">
+                        <li class="footer-bottom__nav-item">
+                            <a class="footer-bottom__nav-link" href="#">Home</a>
+                            <span class="footer-bottom__nav-symbol">|</span>
+                        </li>
+                        <li class="footer-bottom__nav-item">
+                            <a class="footer-bottom__nav-link" href="#">About</a>
+                            <span class="footer-bottom__nav-symbol">|</span>
+
+                        </li>
+                        <li class="footer-bottom__nav-item">
+                            <a class="footer-bottom__nav-link" href="#">Blog</a>
+                            <span class="footer-bottom__nav-symbol">|</span>
+                        </li>
+                        <li class="footer-bottom__nav-item">
+                            <a class="footer-bottom__nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>
