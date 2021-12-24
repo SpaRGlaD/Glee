@@ -127,6 +127,14 @@ document.querySelector('.product-item__add').onmouseleave = () => {
 //    });
 // });
 
+let map;
+
+function initMap() {
+  map = new google.maps.Map(document.getElementById("map"), {
+    center: { lat: 40.78714307561199, lng: -74.08119212898484 },
+    zoom: 13,
+  });
+}
 
 
 
