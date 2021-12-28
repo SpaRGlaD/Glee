@@ -1,0 +1,28 @@
+.details-slider {
+    width: 550px;
+    margin-right: 70px;
+    display: flex;
+    &__thumb {
+        width: 140px;
+    }
+    &__thumb-item {
+        width: 140px;
+        height: 160px;
+        margin-bottom: 25px;
+        margin-right: 25px;
+        cursor: pointer;
+        img {
+            width: 140px;
+            height: 160px;
+            object-fit: contain;
+        }
+    }
+    &__big {
+        width: 387px;
+        img {
+            width: 387px;
+            height: 530px;
+            object-fit: none;
+        }
+    }
+}

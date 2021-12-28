@@ -1,0 +1,31 @@
+.info {
+    &__items {
+        padding: 45px 0 70px;
+        display: flex;
+        justify-content: space-around;
+        background-color: #fef7f0;
+        background-image: url("../images/info-bg.svg");
+        background-position: top center;
+    }
+    &__item {
+        display: flex;
+    }
+    &__item-img {
+        padding-right: 25px;
+        padding-top: 5px;
+    }
+    &__item-info {
+        max-width: 220px;
+    }
+    &__item-title {
+        font-size: 18px;
+        // line-height: 40px;
+        margin-bottom: 5px;
+        color: #414141;
+    }
+    &__item-text {
+        line-height: 30px;
+        color: #585858;
+        @extend %DMSans-400;
+    }
+}

@@ -1,0 +1,27 @@
+.design {
+    padding: 50px 0 60px;
+    &-content {
+        display: grid;
+        grid-template-columns: repeat(3, 370px);
+        grid-template-rows: repeat(2, 246px);
+        grid-gap: 30px;
+    }
+    &-item {
+        background-repeat: no-repeat;
+        background-position: right;
+        // overflow: hidden;
+        padding: 35px 0 35px 35px;
+
+        &__name {
+            max-width: 165px;
+            margin-bottom: 10px;
+        }
+        &__name-link {
+            font-size: 20px;
+            color: #1a1a1a;
+        }
+        &__link {
+            color: #a3bbc8;
+        }
+    }
+}

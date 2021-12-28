@@ -1,0 +1,36 @@
+.filter__title-recent {
+    &::after {
+        content: "";
+        left: 185px;
+    }
+}
+.filter-recent {
+    &__item {
+        display: flex;
+        margin-bottom: 30px;
+    }
+    &__info {
+        // padding-right: 90px;
+        color: #333;
+    }
+    &__title {
+        font-size: 14px;
+        @extend %Rubik-400;
+        line-height: 15px;
+        margin-bottom: 8px;
+    }
+    &__img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80px;
+    }
+    &__price {
+        @extend %Rubik-400;
+        font-size: 15px;
+    }
+}
+.star {
+    margin-bottom: 8px;
+    padding: 0;
+}

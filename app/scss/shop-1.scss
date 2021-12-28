@@ -1,0 +1,47 @@
+@import "vars";
+@import "fonts";
+@import "reset";
+@import "libs";
+@import "global";
+@import "../module/_header/_header";
+@import "../module/_footer/_footer";
+@import "../module/_partners/_partners";
+@import "../module/_filter-category/_filter-category";
+@import "../module/_filter-price/_filter-price";
+@import "../module/_filter-brand/_filter-brand";
+@import "../module/_filter-recent/_filter-recent";
+@import "../module/_product/_product";
+@import "../module/_shop-grid/_shop-grid";
+
+
+
+
+.shop {
+    padding-bottom: 100px;
+    &__inner {
+        display: flex;
+        margin-bottom: 100px;
+    }
+    &__filtres {
+        width: 270px;
+    }
+}
+.filter__item {
+    @extend %Rubik-400;
+}
+.filter__title {
+    @extend %DMSans-700;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+    position: relative;
+    &::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        width: 38px;
+        height: 2px;
+        background-image: url("../images/icons/filter-after.svg");
+    }
+}
+

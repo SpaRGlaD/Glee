@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glee</title>
+    <link href="css/login.min.css" rel="stylesheet">
+</head>
+
+<body>
+    {% include 'app/module/_header/_header.html' %}
+
+    <main class="main">
+
+    {% include 'app/module/_top-login/_top-login.html' %}
+
+        <section class="modal">
+            <div class="container">
+                <div class="modal__inner">
+                    <form class="modal__form" action="#">
+                        <label class="modal__label" >
+                            Username or email address *
+                            <input class="modal__input" type="text">
+                        </label>
+                        <label class="modal__label">
+                            Password *
+                            <input class="modal__input" type="password">
+                        </label>
+                        <button class="modal__btn modal__btn-login" type="submit">Login</button>
+                        <label class="modal__label modal__label-flex">
+                            <input type="checkbox">
+                            Remember me
+                            <a class="modal__error" href="#">Lost your password?</a>
+                        </label>
+                        <p class="modal__text">Not registered? No problem</p>
+                        <button class="modal__btn modal__btn-create" type="submit">Create an account</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        
+    {% include 'app/module/_partners/_partners.html' %}
+
+    </main>
+
+    {% include 'app/module/_footer/_footer.html' %}
+
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>

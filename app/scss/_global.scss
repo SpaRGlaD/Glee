@@ -31,6 +31,17 @@ a {
     color: #1a1a1a;
     font-size: 36px;
 }
+.top {
+    padding: 0 0 110px;
+    &__container {
+        background-color: #edf1f4;
+        text-align: center;
+        height: 126px;
+    }
+    &__inner {
+        padding: 35px 0 35px;
+    }
+}
 .top__title {
     @extend %Rubik-300;
     color: #222933;

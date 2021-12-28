@@ -1,0 +1,25 @@
+.filter-category {
+    margin-bottom: 50px;
+    &__input {
+        @extend %checkbox-hidden;
+        &:checked + .filter-category__checkbox {
+            background-color: #edf1f4;
+        }
+    }
+    &__label {
+        cursor: pointer;
+    }
+    &__checkbox {
+        padding: 12px 14px;
+        background-image: url("../images/icons/filter-angle.svg");
+        background-repeat: no-repeat;
+        background-position: 93% 50%;
+    }
+}
+.filter__title-category{
+    &::after {
+        content: "";
+        left: 109px;
+    }
+
+}

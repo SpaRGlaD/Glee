@@ -1,0 +1,13 @@
+.shop-content {
+    padding-left: 50px;
+    margin: 0 auto;
+    &__inner {
+        // display: flex;
+        // flex-wrap: wrap;
+        // justify-content: space-between;
+        display: grid;
+        grid-template-columns: repeat(3, 270px);
+        grid-column-gap: 30px;
+        grid-row-gap: 40px;
+    }
+}

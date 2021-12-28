@@ -1,0 +1,89 @@
+.header {
+    padding: 50px 0;
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+    }
+}
+.menu {
+    &__list {
+        display: flex;
+    }
+    &__list-item + .menu__list-item {
+        padding-left: 35px;
+    }
+    &__list-link {
+        font-size: 15px;
+        line-height: 12px;
+        color: #436372;
+        @extend %Rubik-500;
+    }
+}
+.user-nav {
+    display: flex;
+    align-items: center;
+    &__link-img3 {
+        padding-right: 80px;
+    }
+    &__link-search {
+        background-color: #edf1f4;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        position: relative;
+        margin-right: 20px;
+    }
+    &__link-img {
+        position: absolute;
+        // height: 50%;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        // width: 50%;
+    }
+    &__link-favorites {
+        background-color: #fcd7b6;
+        border-radius: 50px 0 0 50px;
+        width: 90px;
+        height: 50px;
+        position: relative;
+        &:after {
+            content: "|";
+            color: #fff;
+            font-size: 32px;
+            font-weight: normal;
+            position: absolute;
+            top: 3px;
+            right: -5px;
+        }
+    }
+    &__link-cart {
+        background-color: #fcd7b6;
+        border-radius: 0 50px 50px 0;
+        width: 90px;
+        height: 50px;
+        position: relative;
+        margin-right: 20px;
+    }
+    &__link-menu {
+        background-color: #a3bbc8;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        position: relative;
+    }
+    &__num {
+        position: absolute;
+        font-size: 10px;
+        line-height: 1.7;
+        color: $default;
+        width: 16px;
+        height: 16px;
+        background-color: #fff;
+        border-radius: 50%;
+        text-align: center;
+        top: 7px;
+        right: 25px;
+    }
+}

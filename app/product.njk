@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glee</title>
+    <link href="css/product.min.css" rel="stylesheet">
+</head>
+
+<body>
+    {% include 'app/module/_header/_header.html' %}
+
+    <main class="main">
+
+    {% include 'app/module/_top-product/_top-product.html' %}
+
+
+        <section class="details">
+            <div class="container">
+                <div class="details__inner">
+
+                    {% include 'app/module/_details-slider/_details-slider.html' %}
+
+                    <div class="details-info">
+                        <div class="product-item product-item__details">
+                            <div class="product-item__info">
+                                <div class="product-item__name">Pendant lamp</div>
+                                <div class="star__product" data-rateyo-rating="5"></div>
+                                <div class="product-item__price">23$</div>
+                                <p class="product-item__text">
+                                    consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                                    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                                    nisi ut aliquip ex ea commodo
+                                </p>
+                                <form class="details-info__form" action="#">
+                                    <input class="details-info__num" type="number" value="1" min="1">
+                                    <button class="details-info__btn" type="submit">Add to cart</button>
+                                </form>
+                                <ul class="details-info__list">
+                                    <li class="details-info__list-item">
+                                        <div class="details-info__list-title">SKU:</div>
+                                        <a class="details-info__list-link" href="#">014</a>
+                                    </li>
+                                    <li class="details-info__list-item">
+                                        <div class="details-info__list-title">Category:</div>
+                                        <a class="details-info__list-link" href="#">Lights</a>
+                                    </li>
+                                    <li class="details-info__list-item">
+                                        <div class="details-info__list-title">Tag:</div>
+                                        <a class="details-info__list-link" href="#">Decorative</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-tabs">
+                    <div class="product-tabs__top">
+                        <a class="product-tabs__top-item product-tabs__top-item--active" href="#tab-1">Description</a>
+                        <a class="product-tabs__top-item" href="#tab-2">Additional information</a>
+                        <a class="product-tabs__top-item" href="#tab-3">Reviews (2)</a>
+                    </div>
+                    <div class="product-tabs__content">
+                        <div class="product-tabs__content-item product-tabs__content-item--active" id="tab-1">
+                            consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                            ex ea commodo Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </div>
+                        <div class="product-tabs__content-item" id="tab-2">content 2</div>
+                        <div class="product-tabs__content-item" id="tab-3">content 3</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        {% include 'app/module/_details-slider_related/_details-slider_related.html' %}
+
+        {% include 'app/module/_blog-min/_blog-min.html' %}
+
+        {% include 'app/module/_partners/_partners.html' %}
+
+    </main>
+
+    {% include 'app/module/_footer/_footer.html' %}
+
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>

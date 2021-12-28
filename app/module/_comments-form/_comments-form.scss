@@ -1,0 +1,78 @@
+.comments-form {
+    &__box-input {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        // position: relative;
+
+        &::placeholder {
+            color: #999;
+        }
+    }
+
+    &__input {
+        width: 400px;
+        height: 50px;
+        border: solid 1px #e5e5e5;
+        padding: 10px 20px 10px 20px;
+        // position: relative;
+        &:hover {
+            border: solid 1px $accend;
+        }
+    }
+
+    &__input-name {
+        background-image: url("../images/icons/form-user.svg");
+        background-repeat: no-repeat;
+        background-position: 96% 47%;
+        // position: relative;
+        // &::after{
+        //     content: '';
+        //     position: absolute;
+        //     width: 14px;
+        //     height: 14px;
+        //     top: 0;
+        //     bottom: 0;
+        //     right: 0;
+        //     background-image: url('../images/icons/form-user.svg');
+        // }
+    }
+
+    &__input-email {
+        background: url("../images/icons/form-letter.svg") no-repeat;
+        background-position: 96% 47%;
+
+        // position: relative;
+        // &::after{
+        //     content: '';
+        //     position: absolute;
+        //     top: 0;
+        //     right: 0;
+        //     width: 18px;
+        //     height: 13px;
+        //     background-image: url('../images/icons/form-letter.svg');
+        // }
+    }
+
+    &__area {
+        width: 100%;
+        height: 120px;
+        resize: none;
+        border: solid 1px #e5e5e5;
+        padding: 10px 20px 10px 20px;
+        position: relative;
+        background: url("../images/icons/form-popup.svg") no-repeat;
+        background-position: 98% 14%;
+        &:hover {
+            border: solid 1px $accend;
+        }
+    }
+
+    &__btn {
+        margin-top: 40px;
+        @extend %btn;
+        border: none;
+        padding: 19px 35px 20px;
+        text-transform: uppercase;
+    }
+}

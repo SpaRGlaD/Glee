@@ -1,0 +1,28 @@
+.filter-brand {
+    margin-bottom: 50px;
+    &__input {
+        @extend %checkbox-hidden;
+        &:checked + .filter-brand__checkbox {
+            background-color: #edf1f4;
+            .filter-brand__text {
+                color: $default;
+            }
+        }
+    }
+    &__checkbox {
+        padding: 12px 14px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__text {
+        width: 26px;
+        text-align: center;
+        color: #b3b3b3;
+    }
+}
+.filter__title-brand {
+    &::after {
+        content: "";
+        left: 80px;
+    }
+}

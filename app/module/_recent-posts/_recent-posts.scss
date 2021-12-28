@@ -1,0 +1,41 @@
+.recent-posts {
+    &__title {
+        margin-bottom: 35px;
+        &::after {
+            content: "";
+            position: absolute;
+            left: 150px;
+        }
+    }
+
+    &__item {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__item-link {
+        display: block;
+        min-width: 70px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+
+    &__img {
+        width: 70px;
+        height: 70px;
+        object-fit: cover;
+    }
+
+    &__box-title {
+        font-size: 14px;
+        line-height: 20px;
+        color: #333;
+        margin-bottom: 10px;
+    }
+
+    &__day {
+        font-size: 12px;
+        color: #9a9a9a;
+        padding-left: 3px;
+    }
+}
