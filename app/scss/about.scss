@@ -67,11 +67,13 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        flex-wrap: wrap;
     }
     &__item {
         margin: 0 auto;
         line-height: 32px;
         text-align: center;
+        padding: 10px;
     }
     &__img {
         padding-bottom: 20px;
@@ -122,15 +124,16 @@
         color: $default;
     }
     &__photo {
-        padding-left: 90px;
+        padding-left: 70px;
     }
     &__photo-items {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: center;
     }
     &__photo-item {
         position: relative;
+        padding: 10px;
     }
     &__photo-name {
         font-size: 22px;
@@ -167,4 +170,74 @@
         // height: 41px;
         margin-left: 20px;
     }
+}
+@media (max-width: 1250px) {
+    .team{
+        &__inner{
+            flex-direction: column;
+        }
+        &__info{
+            max-width: 100%;
+        }
+        &__photo-items{
+            padding-top: 20px;
+        }
+        &__photo{
+            padding-left: 0;
+        }
+    }
+}
+@media (max-width: 1150px) {
+    .mission{
+        &__img{
+            object-fit: contain;
+            width: 40%;
+        }
+    }
+}
+@media (max-width: 900px) {
+    .mission{
+        &__img{
+            display: none;
+        }
+        &__info{
+            padding-left: 0;
+        }
+        &__years{
+            padding-top: 0;
+            justify-content: center;
+        }
+        &__title{
+            text-align: center;
+        }
+    }
+    .progress{
+        &__img{
+            height: 90px;
+        }
+    }
+}
+@media (max-width: 500px) {
+    .mission{
+        padding-bottom: 60px;
+        &__awards-item{
+            flex-direction: column;
+        }
+        &__awards-img{
+            object-fit: none;
+            height: 70px;
+        }
+        &__award{
+            padding-left: 0;
+        }
+        &__awards-items{
+            padding-top: 10px;
+        }
+    }
+    .progress{
+        &__items{
+            padding: 0;
+        }
+    }
+
 }

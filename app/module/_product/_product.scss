@@ -83,3 +83,34 @@
         // padding-bottom: 30px;
     }
 }
+@media (max-width: 1200px) {
+    .product{
+        &__content {
+            grid-template-columns: repeat(3, 270px);
+            // grid-template-rows: repeat(2, 380px);
+            grid-gap: 20px;
+        }
+    
+    }
+}
+@media (max-width: 900px) {
+    .product{
+        &__btn{
+            margin: 0;
+        }
+        &__content {
+            grid-template-columns: repeat(2, 270px);
+            // grid-template-rows: repeat(2, 380px);
+        }    
+    }
+}
+@media (max-width: 650px) {
+    .product{
+        padding-top: 40px;
+        &__content {
+            display: grid;
+            grid-template-columns: repeat(1, 270px);
+            // grid-template-rows: repeat(2, 380px);
+        }    
+    }
+}

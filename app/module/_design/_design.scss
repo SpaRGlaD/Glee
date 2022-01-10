@@ -8,7 +8,7 @@
     }
     &-item {
         background-repeat: no-repeat;
-        background-position: right;
+        background-position: center right;
         // overflow: hidden;
         padding: 35px 0 35px 35px;
 
@@ -23,5 +23,39 @@
         &__link {
             color: #a3bbc8;
         }
+    }
+}
+@media (max-width: 1250px) {
+    .design{
+        &-content {
+            grid-template-columns: repeat(2, 370px);
+            // grid-template-rows: repeat(3, 246px);
+            grid-gap: 15px;
+            grid-column-gap: 50px;
+        }
+    }
+}
+@media (max-width: 850px) {
+    .design{
+        &-content {
+            grid-template-columns: repeat(1, 370px);
+            // grid-template-rows: repeat(3, 246px);
+            grid-column-gap: 50px;
+        }
+        &-item{
+            background-size: contain;
+        }    
+    }
+}
+@media (max-width: 450px) {
+    .design{
+        &-content {
+            grid-gap: 0;
+        }
+        &-item{
+            // background-image: none !important;
+            background-position: 71% bottom;
+
+        }    
     }
 }

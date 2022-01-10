@@ -114,4 +114,14 @@ a {
         margin-left: -63px;
     }
 }
- 
+@media (max-width: 1150px) {
+    .pagination__left{
+        justify-content: center;
+        // padding-left: 60px;
+    }
+}
+ @media (max-width: 545px) {
+    .title {
+        font-size: 30px;
+    }    
+ }

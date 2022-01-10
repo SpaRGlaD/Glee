@@ -13,9 +13,6 @@
 @import "../module/_product/_product";
 @import "../module/_shop-grid/_shop-grid";
 
-
-
-
 .shop {
     padding-bottom: 100px;
     &__inner {
@@ -25,6 +22,13 @@
     &__filtres {
         width: 270px;
     }
+    &__filter-btn {
+        display: none;
+        border: none;
+        background-color: transparent;
+        padding: 0;
+    }
+
 }
 .filter__item {
     @extend %Rubik-400;
@@ -44,4 +48,50 @@
         background-image: url("../images/icons/filter-after.svg");
     }
 }
+@media (max-width: 1150px) {
+    .shop {
+        &__filter-btn {
+            display: block;
+            position: fixed;
+            right: 0;
+            bottom: 50px;
+            z-index: 101;
+        }
+        &__filtres {
+            display: none;
+            position: absolute;
+            // width: 100%;
+            z-index: 100;
+            background-color: #fff;
+            left: 20px;
+            top: 20px;
+        }
+        &__inner{
+            display: block;
+            width: 100%;
+        }
+    }
+    .shop-content{
+        padding: 0;
+        &__inner{
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+}
+@media (max-width: 900px) {
+    .shop-content{
+        &__inner{
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 30px;
+        }
+    }
+}
+@media (max-width: 450px) {
+    .shop-content{
+        &__inner{
+            grid-template-columns: repeat(1, 1fr);
+            grid-gap: 15px;
 
+        }
+    }
+}

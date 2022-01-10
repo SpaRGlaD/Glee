@@ -1,11 +1,42 @@
 $(function () {
 
+    $('.menu__btn').on('click', function () {
+        $('.menu__list').toggleClass('menu__list--active')
+    });
+
+
+    $('.shop__filter-btn').on('click', function () {
+        $('.shop__filtres').slideToggle();
+    });
+
+
+    $('.footer-top__title').on('click', function () {
+        $(this).next().slideToggle();
+        $(this).toggleClass('active');
+    });
+
 
 
     $('.related__items-swiper').slick({
         infinite: true,
         slidesToShow: 4,
         slidesToScroll: 1,
+        responsive: [
+            {
+                breakpoint: 1050,
+                settings: {
+                    slidesToShow: 3,
+                },
+                breakpoint: 750,
+                settings: {
+                    slidesToShow: 2,
+                },
+                breakpoint: 545,
+                settings: {
+                    slidesToShow: 1,
+                },
+            },
+        ]
     });
 
     $('.product-tabs__top-item').on('click', function (e) {
@@ -130,10 +161,10 @@ document.querySelector('.product-item__add').onmouseleave = () => {
 let map;
 
 function initMap() {
-  map = new google.maps.Map(document.getElementById("map"), {
-    center: { lat: 40.78714307561199, lng: -74.08119212898484 },
-    zoom: 13,
-  });
+    map = new google.maps.Map(document.getElementById("map"), {
+        center: { lat: 40.78714307561199, lng: -74.08119212898484 },
+        zoom: 13,
+    });
 }
 
 
